@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.contentBox{
+/* .contentBox{
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -26,10 +26,10 @@
     outline: none;
     color: green;
     border-radius: 10px;
-}
+} */
 
 /* Rules Div */
-.rules{
+/* .rules{
     background-color: red;
     width: 540px;
 }
@@ -63,4 +63,4 @@
 
 .buttonDiv button{
     margin-top: 5px;
-}
+} */
