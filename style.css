@@ -64,3 +64,49 @@
 .buttonDiv button{
     margin-top: 5px;
 } */
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    border: 3px solid red;
+}
+.container{
+    align-items: center;
+    border: 3px solid brown;
+    width: 100vw;
+}
+
+.hide{
+    display: none;
+}
+
+/* Start Btn Div */
+.startButtonDiv{
+    border: 3px solid rebeccapurple;
+    padding: 4vmin;
+}
+
+/* Rules Div */
+.rules{
+    border: 3px solid forestgreen;
+    padding: 4vmin;
+}
+.rule-item{
+    list-style-type: none;
+    margin: 2px;
+    border: 3px solid blue;
+}
+
+/* Quiz Div */
+.quiz{
+    padding-bottom: 4vmin;
+}
+.option-wrapper{
+    padding: 2vmin;
+}
+.option-wrapper .option{
+    margin: 2px;
+}

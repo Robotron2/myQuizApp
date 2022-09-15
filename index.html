@@ -15,26 +15,38 @@
     <body>
 
         <div class="main-container">
-            <div class="startButtonDiv">
-                <button class="btn btn-lg btn-dark">Start Quiz</button>
-            </div>
-            <div class="rules hide">
-                <ul>
-                    <li class="rule-item">Quiz rule</li>
-                    <li class="rule-item">Quiz rule</li>
-                    <li class="rule-item">Quiz rule</li>
-                </ul>
-                <div id="okBtn"><button class="btn btn-lg btn-dark">Agree</button></div>
-            </div>
-            <div class="quiz">
-                <div class="question-wrapper">
-                    <div id="question">Question</div>
+            <div class="container">
+                <div class="startButtonDiv text-center hide">
+                    <button class="btn btn-lg btn-dark" id="start-btn">Start Quiz</button>
                 </div>
-                <div class="options-wrapper">
-                    <div class="option"><button class="btn btn-lg btn-outline-primary">Option</button></div>
-                    <div class="option"><button class="btn btn-lg btn-outline-success">Option</button></div>
-                    <div class="option"><button class="btn btn-lg btn-outline-warning">Option</button></div>
-                    <div class="option"><button class="btn btn-lg btn-outline-danger">Option</button></div>
+                <div class="rules text-center hide">
+                    <div class="welcome-note">
+                        <h5>Welcome to WWTBAM</h5>
+                        <p>Here are the rules of the quiz:</p>
+                    </div>
+                    <ul>
+                        <li class="rule-item col-lg-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                        <li class="rule-item col-lg-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                        <li class="rule-item col-lg-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                    </ul>
+                    <div id="agreeBtn hide"><button class="btn btn-lg btn-dark col-lg-12">Agree</button></div>
+                </div>
+                <div class="quiz">
+                    <div class="question-wrapper text-center mt-5 mb-5">
+                        <div id="question">
+                            <h3>Question?</h3>
+                        </div>
+                    </div>
+                    <div class="options-wrapper">
+                        <div class="option mt-3 mb-3"><button class="col btn btn-lg btn-outline-primary">Option</button>
+                        </div>
+                        <div class="option mt-3 mb-3"><button class="col btn btn-lg btn-outline-success">Option</button>
+                        </div>
+                        <div class="option mt-3 mb-3"><button class="col btn btn-lg btn-outline-warning">Option</button>
+                        </div>
+                        <div class="option mt-3 mb-3"><button class="col btn btn-lg btn-outline-danger">Option</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -62,6 +74,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
             crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </body>
 
 </html>
