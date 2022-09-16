@@ -29,13 +29,16 @@ startBtn.addEventListener("click", ()=>{
 })
 
 const setQuestion = () =>{
-    showQuestion(shuffledQuestion[currentQuestionIndex])
+    if (currentQuestionIndex < questions.length) {
+        showQuestion(shuffledQuestion[currentQuestionIndex])
+    }
+    else{
+        console.log("No more questions")
+    }
 }
 
 const showQuestion = (param) =>{
     questionElement.innerText = param.question
-
-    // console.log(param.correctAns)
 
     optionOne.innerHTML = param.answers[0].ans 
 
@@ -45,31 +48,25 @@ const showQuestion = (param) =>{
     
     optionFour.innerHTML = param.answers[3].ans
     
-    for (let option = 0; option < optionBtnGroup.length; option++) {
-    
-        optionBtnGroup[option].addEventListener("click", ()=>{
-    
-            if (optionBtnGroup[option].innerText == param.correctAns) {
-    
-                console.log("Correct")
-                
-                currentQuestionIndex++
-
-                console.log(currentQuestionIndex)
-
-                setQuestion()
+}
 
 
-            }
+
+for (let option = 0; option < optionBtnGroup.length; option++) {
+
+    optionBtnGroup[option].addEventListener("click", ()=>{        
         
-        })
-
-    }
-
+        currentQuestionIndex++
+        
+        console.log(currentQuestionIndex)
+        
+        setQuestion()
+    })
 }
 
 
 
 
-const selectOption = () =>{}
+
+// const selectOption = () =>{}
 

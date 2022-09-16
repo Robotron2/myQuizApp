@@ -28,6 +28,16 @@ const questions = [
             {ans: "12", isCorrect: true}, 
             {ans: "15", isCorrect: false}
         ]
+    },
+    {
+        question: "What is 2 + 5?",
+        correctAns : "7",
+        answers: [
+            {ans: "4", isCorrect: false}, 
+            {ans: "9", isCorrect: false}, 
+            {ans: "7", isCorrect: true}, 
+            {ans: "1", isCorrect: false}
+        ]
     }
 
 ]
