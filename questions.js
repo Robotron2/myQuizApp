@@ -1,6 +1,7 @@
 const questions = [
     {
         question: "What is 2 + 2?",
+        correctAns : "4",
         answers: [
             {ans: "2", isCorrect: true}, 
             {ans: "4", isCorrect: false}, 
@@ -10,6 +11,7 @@ const questions = [
     },
     {
         question: "What is 6 + 2?",
+        correctAns : "8",
         answers: [
             {ans: "4", isCorrect: false}, 
             {ans: "7", isCorrect: false}, 
@@ -19,6 +21,7 @@ const questions = [
     }, 
     {
         question: "What is 10 + 2?",
+        correctAns : "12",
         answers: [
             {ans: "8", isCorrect: false}, 
             {ans: "9", isCorrect: false}, 
