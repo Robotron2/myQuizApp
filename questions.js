@@ -38,6 +38,46 @@ const questions = [
             {ans: "7", isCorrect: true}, 
             {ans: "1", isCorrect: false}
         ]
+    },
+    {
+        question: "What is 9 + 7?",
+        correctAns : "16",
+        answers: [
+            {ans: "14", isCorrect: false}, 
+            {ans: "19", isCorrect: false}, 
+            {ans: "17", isCorrect: false}, 
+            {ans: "16", isCorrect: true}
+        ]
+    },
+    {
+        question: "What is 2 - 1?",
+        correctAns : "1",
+        answers: [
+            {ans: "1", isCorrect: true}, 
+            {ans: "2", isCorrect: false}, 
+            {ans: "3", isCorrect: false}, 
+            {ans: "6", isCorrect: false}
+        ]
+    },
+    {
+        question: "What is 3 + 5?",
+        correctAns : "8",
+        answers: [
+            {ans: "4", isCorrect: false}, 
+            {ans: "2", isCorrect: false}, 
+            {ans: "8", isCorrect: true}, 
+            {ans: "9", isCorrect: false}
+        ]
+    },
+    {
+        question: "What is 1 + 1?",
+        correctAns : "2",
+        answers: [
+            {ans: "10", isCorrect: false}, 
+            {ans: "2", isCorrect: true}, 
+            {ans: "1", isCorrect: false}, 
+            {ans: "11", isCorrect: false}
+        ]
     }
 
 ]

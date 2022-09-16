@@ -13,7 +13,6 @@ let shuffledQuestion, currentQuestionIndex
 
 
 
-
 startBtn.addEventListener("click", ()=>{
     startBtn.classList.add("hide")
     startBtnDiv.classList.add("hide")
