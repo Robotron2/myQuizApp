@@ -3,7 +3,15 @@ const startBtn = document.getElementById("start-btn")
 const ruleDiv = document.getElementById("rules-div")
 const agreeBtn = document.getElementById("agree-btn")
 const quizDiv = document.getElementById("quiz-div")
-let options = document.querySelectorAll(".option-btn")
+let optionBtnGroup = document.querySelectorAll(".option-btn")
+let questionElement = document.getElementById("question")
+let optionOne = document.getElementById("option-one")
+let optionTwo = document.getElementById("option-two")
+let optionThree = document.getElementById("option-three")
+let optionFour = document.getElementById("option-four")
+let shuffledQuestion, currentQuestionIndex
+
+
 
 startBtn.addEventListener("click", ()=>{
     startBtn.classList.add("hide")
@@ -14,44 +22,50 @@ startBtn.addEventListener("click", ()=>{
  agreeBtn.addEventListener("click", ()=>{
     ruleDiv.classList.add("hide")
     quizDiv.classList.remove("hide")
- })
+    shuffledQuestion = questions.sort(()=> Math.random() - 0.5);
+    currentQuestionIndex = 0;
+    setQuestion()
+})
 
-
-
-
-for (let option = 0; option < options.length; option++) {
-        options[option].addEventListener("click", function(){
-        let optionInnerHtml = this.innerHTML
-        showBtn(optionInnerHtml)
-    })
-        
-        
+const setQuestion = () =>{
+    if (currentQuestionIndex < questions.length) {
+        showQuestion(shuffledQuestion[currentQuestionIndex])
     }
+    else{
+        console.log("No more questions")
+    }
+}
 
- const selectAns = () =>{
+const showQuestion = (param) =>{
+    questionElement.innerText = param.question
+
+    optionOne.innerHTML = param.answers[0].ans 
+
+    optionTwo.innerHTML = param.answers[1].ans
     
-
- }
-
- const showBtn = (param) =>{
-    console.log(param)
+    optionThree.innerHTML = param.answers[2].ans
+    
+    optionFour.innerHTML = param.answers[3].ans
+    
 }
 
 
 
-// const displayQuestions = (que) =>{
-//     questionElement.innerText = que.question
-//     let answerArray = que.answers
-//     answerArray.forEach(answer =>{
-//         const button = document.createElement("button")
-//         button.innerText = answer.text
-//         button.classList.add("btn")
-//         if (answer.correct) {
-//         button.dataset.correct = answer.correct
-//         }
-//         button.addEventListener('click', selectAnswer)
-//         answerContainer.appendChild(button)
-//     });
-    
-    
-// }
+for (let option = 0; option < optionBtnGroup.length; option++) {
+
+    optionBtnGroup[option].addEventListener("click", ()=>{        
+        
+        currentQuestionIndex++
+        
+        console.log(currentQuestionIndex)
+        
+        setQuestion()
+    })
+}
+
+
+
+
+
+// const selectOption = () =>{}
+
