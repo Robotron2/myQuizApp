@@ -40,17 +40,15 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
-// btn.onclick = function () {
-//     modal.style.display = "block";
-// };
-
-// When the user clicks on <span> (x), close the modal
-
 exitBtn.addEventListener("click", () => {
     modal.style.display = "none";
     window.location.href = "index.html"
 });
+
+withdrawBtn.addEventListener("click", () => {
+    alert("You have successfully withdrawn your money")
+    window.location.href = "index.html"
+})
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -79,7 +77,8 @@ const setQuestion = () => {
         console.log("No more questions");
         modal.style.display = "block";
         disableBtn();
-        resultDiv.innerHTML = `<h5>Well done. You scored: ${scoredPoints} / ${questions.length * 10}</h5>`;
+        let amountWon = scoredPoints * 100
+        resultDiv.innerHTML = `<h5>Well done. You win: $${amountWon}</h5>`;
     }
 };
 
