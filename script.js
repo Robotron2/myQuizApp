@@ -77,7 +77,7 @@ const setQuestion = () => {
         console.log("No more questions");
         modal.style.display = "block";
         disableBtn();
-        let amountWon = scoredPoints * 100
+        let amountWon = scoredPoints * 10000
         resultDiv.innerHTML = `<h5>Well done. You win: $${amountWon}</h5>`;
     }
 };

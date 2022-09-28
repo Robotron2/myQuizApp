@@ -183,16 +183,17 @@ body {
 }
 
 #question {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
     line-height: 2;
     color: #fff;
     background-color: blue;
-    border-radius: 30px;
+    border-radius: 35px;
     text-align: center;
     margin: 20px;
+    padding: 1.3vmin;
 }
 
 .option-wrapper {
