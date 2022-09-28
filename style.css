@@ -176,7 +176,8 @@ body {
 /* Quiz Div */
 
 .quiz {
-    margin-top: 400px;
+    /* margin-top: 40px; */
+    margin: 4vmin 40px;
     padding-bottom: 4vmin;
     /* background: #ECF0F3; */
     /* display: grid; */
@@ -225,6 +226,48 @@ body {
 
 
 /* Media Queries */
+
+@media(max-width: 900px) {
+    .quiz {
+        /* margin-top: 40px; */
+        width: 100%;
+        margin: 10vmin auto;
+        padding: 1vmin;
+        /* background: #ECF0F3; */
+        /* display: grid; */
+        font-size: 10px !important;
+        text-align: center;
+    }
+    #question {
+        font-size: 15px;
+        /* padding: 3vmin; */
+    }
+    .startButtonDiv {
+        /* border: 3px solid rebeccapurple; */
+        margin-top: 35vmin;
+        padding: 10vmin;
+    }
+    /* Rules Div */
+    .rules {
+        /* border: 3px solid forestgreen; */
+        padding: 4vmin;
+        margin-top: 35vmin;
+    }
+    .welcome-note h5 {
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+    }
+    .welcome-note p {
+        color: #fff;
+    }
+    .rule-item {
+        list-style-type: none;
+        margin: 2px;
+        color: #fff;
+        font-weight: 500;
+        /* border: 3px solid blue; */
+    }
+}
 
 @media(min-width: 1600px) {
     .container {
